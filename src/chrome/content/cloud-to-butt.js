@@ -31,10 +31,27 @@
     {
         var v = textNode.nodeValue;
     
-        v = v.replace(/\bThe Cloud\b/g, "My Butt");
-        v = v.replace(/\bThe cloud\b/g, "My butt");
-        v = v.replace(/\bthe Cloud\b/g, "my Butt");
-        v = v.replace(/\bthe cloud\b/g, "my butt");
+	// Cody is Cody
+	v = v.replace(/\bKote\b/g, "Cody (in a weird accent)");
+	v = v.replace(/\bkote\b/g, "cody (in a weird accent)");
+	v = v.replace(/\bKOTE\b/g, "CODY (in a weird accent)");
+
+	// vod means bro, bro
+	// there may be issues with VOD being replaced, if so that line may be removed
+	v = v.replace(/\bVod\b/g, "Bro");
+	v = v.replace(/\bvod\b/g, "bro");
+	v = v.replace(/\bVOD\b/g, "BRO");
+
+	//alor? you mean king, right?
+	v = v.replace(/\balor\b/g, "king");
+	v = v.replace(/\bAlor\b/g, "King");
+	v = v.replace(/\bALOR\b/g, "KING");
+
+	// the bro-est king you ever saw
+	v = v.replace(/\bvod'alor\b/g, "bro-king");
+	v = v.replace(/\bVod'Alor\b/g, "Bro-King");
+	v = v.replace(/\bVod'alor\b/g, "Bro-king");
+	v = v.replace(/\bvod'Alor\b/g, "bro-King");
     
         textNode.nodeValue = v;
     }
